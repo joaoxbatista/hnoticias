@@ -1,0 +1,155 @@
+/*Import Components*/
+@import 'components/colors'
+@import 'components/fonts'
+@import 'components/inputs'
+@import 'components/posts'
+@import 'components/single'
+
+
+    
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+    #searchform
+        .screen-reader-text
+            display: none
+        #s
+            border-radius: 40px
+            border: none
+            outline: none
+            padding: 5px 20px
+            margin-left: 50px
+            
+        #searchsubmit
+            position: absolute
+            left: 0px
+            border: none
+            background: $green
+            color: #fff
+            font-weight: bold
+            font-family: Base
+            padding: 5px 10px
+            border-radius: 40px 0px 0px 40px
+        
+    #main-content
+        min-height: 85vh
+        display: block
+        position: relative
+        padding: 0px 0px 50px 0px
+        
+    .category-title
+        h1
+            color: $green
+            font-weight: bold
+            font-family: Base
+            font-size: 4em
+            padding: 10px
+            
+            &::after
+                content: ""
+                width: 200px
+                height: 4px
+                background: $green
+                display: block
+                margin-top: 10px
+    
+            
+    #menu
+        font-family: Base
+        font-size: 1.2em
+        background: rgb(251, 251, 251)
+        padding: 15px 0
+
+        #menu-btn
+            display: block
+            float: right
+            margin-top: 0px
+            height: 40px
+            width: 40px
+            background: #fff
+            color: $green
+            padding-top: 6px
+            font-weight: bold
+            text-align: center
+            border-radius: 25px
+            border: 2px solid $green
+            transition: all .5s
+
+            &:hover, &:focus, &:active
+                background: $green
+                color: #fff
+                transition: all .5s
+                cursor: pointer
+
+        #menu-content
+            display: none
+            margin-top: 30px
+            border-radius: 5px
+            padding: 0px
+
+            ul
+                list-style: none
+                margin: 0
+                padding: 0px
+                width: 100%
+
+                li
+                    a
+                        color: $green
+                        font-weight: bold
+                        background: #fff
+                        display: block
+                        padding: 8px 10px
+                        border-radius: 2px
+                        margin: 4px 2px
+                        text-align: center
+                        text-decoration: none
+
+                        &:hover, &:focus
+                            cursor: pointer
+
+
+    #search-bar
+        background: $green-lighter
+        padding: 20px 0px
+
+    #banner
+        background: #333
+        min-height: 250px
+
+
+
+
+    #footer
+        background: #212E3C
+        border-top: 3px solid $green
+        color: #eee
+        padding-top: 30px
+        padding-bottom: 20px
+        #menu_footer
+            ul
+                list-style: none
+                padding: 0px
+                margin-left: 0px
+                li
+                    float: left
+                    a
+                        text-decoration: none
+                        color: $green
+                        padding: 5px 10px
+                        font-weight: bold
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
